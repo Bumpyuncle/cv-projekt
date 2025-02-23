@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header{
+    background-image: url("images/kanye.jpg");
+    background-size: 100%;
+    background-position: center;
+    height: 200px;
+    padding: 20px ;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 10px 0;
+    
+}
+
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+
+}   
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li strong {
+    font-weight: bold;
+}
+
+section ul li p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-image: url("images/kanye.jpg");
+    background-size: cover; /* Ensures proper scaling */
+    background-position: center;
+    padding: 60px; /* Adjust padding */
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+#name {
+    text-align: left;
+    margin-left: 20px; /* Justera detta värde för att flytta det mer eller mindre */
+}
+
+#name {
+
+    color: white;
+
+}
+
+header h1:last-of-type {
+    color: rgb(255, 255, 255); /* Change this to any color you want */
+}
+
+
+section ul {
+    list-style-type: none; /* Removes bullets */
+    padding-left: 0; /* Aligns text properly */
+}
