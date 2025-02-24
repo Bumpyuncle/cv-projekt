@@ -46,7 +46,7 @@ nav ul li a {
 
 }   
 
-/* Main Content */
+
 main {
     padding: 20px;
     max-width: 900px;
@@ -82,12 +82,12 @@ section ul li p {
     margin-bottom: 5px;
 }
 
-/* Footer */
+
 footer {
     background-image: url("images/kanye.jpg");
-    background-size: cover; /* Ensures proper scaling */
+    background-size: cover; 
     background-position: center;
-    padding: 60px; /* Adjust padding */
+    padding: 60px;
     text-align: center;
 }
 
@@ -114,7 +114,7 @@ footer {
 
 #name {
     text-align: left;
-    margin-left: 20px; /* Justera detta värde för att flytta det mer eller mindre */
+    margin-left: 20px; 
 }
 
 #name {
@@ -124,11 +124,10 @@ footer {
 }
 
 header h1:last-of-type {
-    color: rgb(255, 255, 255); /* Change this to any color you want */
-}
+    color: rgb(255, 255, 255); 
 
 
 section ul {
-    list-style-type: none; /* Removes bullets */
-    padding-left: 0; /* Aligns text properly */
+    list-style-type: none; 
+    padding-left: 0; 
 }
