@@ -1,0 +1,100 @@
+let cv= {
+    "erfarenheter": [
+        {
+            titel: "Sales manager",
+            arbetsgivare: "CDL WHEELS",
+            datum: "2021-2023",
+            beskrivning: "Led a sales team, developed strategies to increase revenue, and built strong client relationships. Oversaw sales performance, trained new employees, and implemented marketing initiatives to enhance business growth and customer retention.",
+        },
+
+        {
+            titel: "Delivery driver",
+            arbetsgivare: "one  partner",
+            datum: "2020-2021",
+            beskrivning: "Responsible for the safe and timely transportation of goods to customers, ensuring high-quality service and efficient route planning. Managed deliveries under tight deadlines while maintaining excellent customer communication and problem-solving on the road.",
+        },
+
+        {
+            titel: "Asphalt paver",
+            arbetsgivare: "Saferoad",
+            datum: "2023-2024",
+            beskrivning: "Worked in road construction, operating heavy machinery and ensuring high-quality asphalt paving. Focused on precision, efficiency, and teamwork to complete projects on schedule while maintaining safety regulations and high industry standards.",
+        }
+    ],
+
+            "utbildningar": [
+                {
+                namn:  "Business and economics",
+                beskrivning: "Completed my high school education with a focus on business and entrepreneurship. Developed strong analytical and problem-solving skills while gaining a foundational understanding of business operations and management.",
+                datum: "2016-2019",
+                },
+
+                {
+                    namn:  "Frontend-utvecklare",
+                    beskrivning: "I am currently studying to become a Frontend Developer at Yrkeshögskolan in Borås, where I am gaining hands-on experience in web development, focusing on modern technologies like HTML, CSS and JavaScript. .",
+                    datum:  "2025-pågående",
+                }
+            ],
+
+            "aboutme": "I have a diverse professional background, having worked in roles such as sales manager, delivery driver, and asphalt paver. However, my true passion lies in programming. Over the past few years, I have become increasingly fascinated by web development, and I am now studying Frontend Development at Yrkeshögskolan in Borås. I enjoy solving problems through coding and love the creative challenge of building interactive, user-friendly websites. With a strong drive to learn and grow, I am excited to continue my journey in the tech world and contribute to meaningful projects. When Im not programming, I enjoy spending time with family and friends or exploring new places.",
+
+            "contactinfo": 
+
+                {
+                    adress: "Örebro, Sweden",
+                    Telefon: "072-432 45 67",
+                    mail: " Alialmoushahidi1@gmail.com",
+                  
+                }   
+}
+
+para =  document.createElement("p")
+node = document.createTextNode(cv.aboutme)
+para.appendChild(node);
+element = document.getElementById("Aboutme");
+element.appendChild(para);
+
+
+para =  document.createElement("li")
+node = document.createTextNode(cv.contactinfo.adress)
+para.appendChild(node);
+element = document.getElementById("contactinfo");
+element.appendChild(para);
+
+
+para =  document.createElement("li")
+node = document.createTextNode(cv.contactinfo.Telefon)
+para.appendChild(node);
+element = document.getElementById("contactinfo");
+element.appendChild(para);
+
+
+para =  document.createElement("li")
+node = document.createTextNode(cv.contactinfo.mail)
+para.appendChild(node);
+element = document.getElementById("contactinfo");
+element.appendChild(para);
+
+
+
+
+for (let i=0; i<cv.erfarenheter.length; i++) {
+
+    erf = document.getElementById("erfarenheter");
+html = "<p><strong>"+ cv.erfarenheter[i].titel+"</strong> "+cv.erfarenheter[i].datum + "<p>" + cv.erfarenheter[i].beskrivning + "</p>";
+erf.insertAdjacentHTML("afterend", html);
+
+
+}
+
+
+
+for (let i=0; i<cv.utbildningar.length; i++) {
+
+    erf = document.getElementById("utbildningar");
+html = "<p><strong>"+ cv.utbildningar[i].namn+"</strong> "+cv.utbildningar[i].datum + "<p>" + cv.utbildningar[i].beskrivning + "</p>";
+erf.insertAdjacentHTML("afterend", html);
+
+
+}
+
